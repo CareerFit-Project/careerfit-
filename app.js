@@ -1146,16 +1146,17 @@
     });
   }
 
-  function initStorageMode() {
-    if (isSupabaseConfigured) {
-      state.client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-      state.authMode = "supabase";
-      nodes.connectionStatus.textContent = "Supabase is configured. Authentication and database storage are active.";
-    } else {
-      state.authMode = "local";
-      nodes.connectionStatus.textContent = "Supabase is not configured yet. The site is running in local demo mode for preview and UI testing.";
-    }
+function initStorageMode() {
+  if (isSupabaseConfigured) {
+    state.client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    state.authMode = "supabase";
+    nodes.connectionStatus.hidden = true;
+  } else {
+    state.authMode = "local";
+    nodes.connectionStatus.hidden = false;
+    nodes.connectionStatus.textContent = "Supabase is not configured yet. The site is running in local demo mode for preview and UI testing.";
   }
+}
 
   async function restoreSession() {
     if (state.authMode === "supabase") {
