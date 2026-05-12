@@ -360,7 +360,7 @@ button,input,select,textarea{font:inherit}
   letter-spacing:.08em;
 }
 
-.eyebrow{
+.eyebrow{   display: none !important; }
   color:var(--teal-deep);
   background:rgba(42,168,140,.14);
 }
