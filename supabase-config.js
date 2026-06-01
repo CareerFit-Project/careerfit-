@@ -1,2 +1,2 @@
 window.CAREERFIT_SUPABASE_URL = "https://zkfjmbqrzcgqxxpgjyrc.supabase.co";
-window.CAREERFIT_SUPABASE_ANON_KEY = "sb_publishable_CMFy-o7revNslhwmUFlrSA_FcDRFQvj";
+window.CAREERFIT_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InprZmptYnFyemNncXh4cGdqeXJjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzczODI2OTIsImV4cCI6MjA5Mjk1ODY5Mn0.8N18-Ey7lt9LxNbeNfEofLdGP442ncznqz0kaS8mj50";
